@@ -10,7 +10,7 @@ public class EquationFactory {
     private static final String SEPARATOR = " "; // 문자열 분리의 기준이 되는 상수
     private static final int INTERVAL = 2; // 간격을 지정하는 상수
 
-    // 방정식 객체를 만드는 메서드: 문자열을 수식을 받아서 숫자 List와 연산자 List를 만들고 방정식 객체로 반환
+    // 방정식 객체를 만드는 메서드: 문자열을 수식을 받아서 숫자 List와 연산자 List를 만들고 방정식 객체로 반다
     public Equation create(String equation) {
         List<String> strings = Arrays.asList(equation.split(SEPARATOR));// Arrays.asList()는 Arrays의 private 정적 클래스인 ArrayList를 리턴
         List<Integer> numbers = createNumbers(strings); // 문자열 수식에서 숫자 부분을 분리한다
